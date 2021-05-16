@@ -17,4 +17,5 @@ def add_show(request):
     else:
         fm=StudentRegistration()
     stud=User.objects.all()
+    
     return render(request,'enroll/addandshow.html',{'form':fm,'stu':stud})
